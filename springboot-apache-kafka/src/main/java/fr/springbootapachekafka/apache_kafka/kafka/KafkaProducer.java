@@ -12,9 +12,9 @@ public class KafkaProducer {
 
     private final KafkaTemplate<String, String> kafkaTemplate;
     // Méthode pour envoyer un message à un topic spécifique
-    public void sendMessage(String topic, String message) {
+    public void sendMessage(String message) {
         // Enregistrement de l'envoi du message dans les logs
-        log.info("Sending message '{}' to topic '{}'", message, topic);
+        log.info("Sending message '{}'", message);
         // Envoi du message au topic spécifié
         kafkaTemplate.send("kafka-guide-practice", message);
     }
