@@ -10,7 +10,7 @@ public class kafkaTopicConfig {
 
     @Bean
     public NewTopic myTopic(){
-        return TopicBuilder.name("kafka-topic1").build();
+        return TopicBuilder.name("kafka-guide-practice").build();
 
     }
 }
